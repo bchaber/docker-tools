@@ -1,0 +1,5 @@
+alias tex='docker run --rm -it -v$(pwd):/home/tex chaberb/tex'
+alias tikz='docker run --rm -it -v$(pwd):/home/tex chaberb/tikz'
+alias ijulia='docker run --rm -it -p8888:8888 -v$(pwd):/home/jovyan/work chaberb/ijulia'
+alias plantuml='docker run --rm -i chaberb/plantuml'
+alias fenics='docker run --rm -it -p9999:8888 -v$(pwd):/home/fenics/work quay.io/fenicsproject/stable:current "jupyter-notebook --ip=0.0.0.0"'
